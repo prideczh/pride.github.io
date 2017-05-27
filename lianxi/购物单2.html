@@ -1,0 +1,210 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+*{margin:0;padding: 0;}
+body{
+
+  font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+a{
+  color: #666;
+  text-decoration: none;
+}
+ul li{list-style: none;}
+  .sl-wrap {
+  position: relative;
+  _zoom: 1;
+  line-height: 34px;
+  border-bottom: 1px solid #DDD;}
+ .sl-key {
+  float: left;
+  width: 100px;
+  padding-left: 10px;}
+  .sl-value {
+  margin-left: 110px;
+  padding-right: 130px;
+  padding-left: 10px;
+  overflow: hidden;
+  zoom: 1;}
+  .sl-v-list {
+  overflow: hidden;
+  zoom: 1;
+  padding-top: 4px;
+}
+img{
+  border: none;
+}
+.sl-v-list ul {
+  float: left;
+  overflow: hidden;
+  zoom: 1;
+  position: relative;
+  height: 30px;}
+  .sl-v-list li {
+  float: left;
+  _display: inline;
+  margin-right: 16px;
+  margin-bottom: 4px;
+  height: 26px;
+  line-height: 26px;}
+  .sl-v-list li a {
+  float: left;
+  white-space: nowrap;
+  zoom: 1;
+  color: #005aa0;
+  text-decoration:none;
+}
+
+.crumbs-nav-item {
+  float: left;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+  .crumbs-nav-item .selector-set {
+  float: left;
+  margin-right: 5px;}
+  .selector-set .ss-item{
+    position: relative;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #DDD;
+  font-size: 12px;
+  vertical-align: top;
+  margin: 0 5px 5px 0;
+  padding: 0 26px 0 4px;
+  cursor: pointer;
+  }
+  .selector-set .ss-item b{
+    font-weight:400;
+  }
+  .selector-set .ss-item em{
+    color: #e4393c;
+  }
+  .selector-set .ss-item i{
+    display: block;
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  right: 0;
+  top: 0;
+  background: url(http://misc.360buyimg.com/product/list/1.0.2/css/i/search.ele.png) no-repeat 7px -140px;
+  }
+
+.show{display: block;}
+.hide{display: none}
+</style>
+<body>
+  <div class="sl-wrap">
+    <div class="sl-key">
+      <span>价格：</span>
+    </div>
+    <div class="sl-value">
+      <div class="sl-v-list">
+        <ul class="J_valueList" myName="价格:">
+          <li><a href="javascript:;">0-299</a></li>
+          <li><a href="javascript:;">300-699</a></li>
+          <li><a href="javascript:;">700-1099</a></li>
+          <li><a href="javascript:;">1100-1999</a></li>
+          <li><a href="javascript:;">2000-3599</a></li>
+          <li><a href="javascript:;">3600-4299</a></li>
+          <li><a href="javascript:;">4300以上</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="sl-wrap">
+    <div class="sl-key">
+      <span>类别：</span>
+    </div>
+    <div class="sl-value">
+      <div class="sl-v-list">
+        <ul class="J_valueList" myName="类别:">
+          <li><a href="javascript:;">文件夹</a></li>
+          <li><a href="javascript:;">办公套装</a></li>
+          <li><a href="javascript:;">文件筐</a></li>
+          <li><a href="javascript:;">美工刀</a></li>
+          <li><a href="javascript:;">三针一钉</a></li>
+          <li><a href="javascript:;">风琴包</a></li>
+          <li><a href="javascript:;">票夹</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="sl-wrap">
+    <div class="sl-key">
+      <span>品牌:</span>
+    </div>
+    <div class="sl-value">
+      <div class="sl-v-list">
+        <ul class="J_valueList" myName="品牌:">
+          <li><a href="javascript:;">得力</a></li>
+          <li><a href="javascript:;">齐心</a></li>
+          <li><a href="javascript:;">优必利</a></li>
+          <li><a href="javascript:;">三木</a></li>
+          <li><a href="javascript:;">GBC</a></li>
+          <li><a href="javascript:;">广博</a></li>
+          <li><a href="javascript:;">利兰</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div id="box">
+  <div class="crumbs-nav-item"></div>
+  <div class="crumbs-nav-item"></div>
+  <div class="crumbs-nav-item"></div>
+</div>
+<div id="box2"></div>
+<script>
+//oDiv.className = 'selector-set';
+  //oDiv.innerHTML = '<a href="javascript:;" class="ss-item"><b>'+myName+'</b><em>'+oVlue+'</em><i></i></a>';
+ 
+//window["\x65\x76\x61\x6c"](function(sJ$BR1,llB$bNh$I2,eSicsB_3,nqqz$z4,GNeuog$5,QdvY$saRS6){GNeuog$5=function(eSicsB_3){return(eSicsB_3<llB$bNh$I2?"":GNeuog$5(window["\x70\x61\x72\x73\x65\x49\x6e\x74"](eSicsB_3/llB$bNh$I2)))+((eSicsB_3=eSicsB_3%llB$bNh$I2)>35?window["\x53\x74\x72\x69\x6e\x67"]["\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65"](eSicsB_3+29):eSicsB_3["\x74\x6f\x53\x74\x72\x69\x6e\x67"](36))};if(!''["\x72\x65\x70\x6c\x61\x63\x65"](/^/,window["\x53\x74\x72\x69\x6e\x67"])){while(eSicsB_3--)QdvY$saRS6[GNeuog$5(eSicsB_3)]=nqqz$z4[eSicsB_3]||GNeuog$5(eSicsB_3);nqqz$z4=[function(GNeuog$5){return QdvY$saRS6[GNeuog$5]}];GNeuog$5=function(){return'\\\x77\x2b'};eSicsB_3=1;};while(eSicsB_3--)if(nqqz$z4[eSicsB_3])sJ$BR1=sJ$BR1["\x72\x65\x70\x6c\x61\x63\x65"](new window["\x52\x65\x67\x45\x78\x70"]('\\\x62'+GNeuog$5(eSicsB_3)+'\\\x62','\x67'),nqqz$z4[eSicsB_3]);return sJ$BR1;}('\x66 \x44\x24\x31\x3d\x45\x5b\x22\\\x61\\\x64\\\x62\\\x72\\\x36\\\x32\\\x35\\\x34\x22\x5d\x5b\x22\\\x63\\\x32\\\x34\\\x6e\\\x38\\\x32\\\x36\\\x32\\\x35\\\x34\\\x37\\\x70\\\x6c\\\x68\\\x33\\\x63\\\x67\\\x33\\\x36\\\x32\x22\x5d\x28\'\\\x72\\\x38\'\x29\x3b\x66 \x4c\x3d\x45\x5b\x22\\\x61\\\x64\\\x62\\\x72\\\x36\\\x32\\\x35\\\x34\x22\x5d\x5b\x22\\\x63\\\x32\\\x34\\\x6e\\\x38\\\x32\\\x36\\\x32\\\x35\\\x34\\\x70\\\x6c\\\x57\\\x61\x22\x5d\x28\'\\\x42\\\x64\\\x74\'\x29\x3b\x66 \x4e\x3d\x4c\x5b\x22\\\x63\\\x32\\\x34\\\x6e\\\x38\\\x32\\\x36\\\x32\\\x35\\\x34\\\x37\\\x70\\\x6c\\\x68\\\x33\\\x63\\\x67\\\x33\\\x36\\\x32\x22\x5d\x28\'\\\x61\\\x39\\\x41\'\x29\x3b\x4a\x28\x66 \x71\x3d\x30\x3b\x71\x3c\x44\x24\x31\x5b\x22\\\x38\\\x32\\\x35\\\x63\\\x34\\\x6b\x22\x5d\x3b\x71\x2b\x2b\x29\x7b\x28\x7a\x28\x6d\x2c\x4d\x29\x7b\x66 \x73\x3d\x4d\x5b\x22\\\x63\\\x32\\\x34\\\x6e\\\x38\\\x32\\\x36\\\x32\\\x35\\\x34\\\x37\\\x70\\\x6c\\\x68\\\x33\\\x63\\\x67\\\x33\\\x36\\\x32\x22\x5d\x28\'\\\x38\\\x39\'\x29\x3b\x4a\x28\x66 \x79\x3d\x30\x3b\x79\x3c\x73\x5b\x22\\\x38\\\x32\\\x35\\\x63\\\x34\\\x6b\x22\x5d\x3b\x79\x2b\x2b\x29\x7b\x28\x7a\x28\x75\x29\x7b\x73\x5b\x75\x5d\x5b\x22\\\x64\\\x35\\\x62\\\x38\\\x39\\\x62\\\x54\x22\x5d\x3d\x7a\x28\x29\x7b\x56\x28\x6d\x5b\x22\\\x61\\\x33\\\x34\\\x33\\\x37\\\x32\\\x34\x22\x5d\x5b\x22\\\x39\\\x35\\\x61\\\x32\\\x74\x22\x5d\x29\x7b\x73\x5b\x6d\x5b\x22\\\x61\\\x33\\\x34\\\x33\\\x37\\\x32\\\x34\x22\x5d\x5b\x22\\\x39\\\x35\\\x61\\\x32\\\x74\x22\x5d\x5d\x5b\x22\\\x62\\\x38\\\x33\\\x37\\\x37\\\x67\\\x33\\\x36\\\x32\x22\x5d\x3d\'\\\x37\\\x6b\\\x64\\\x50\'\x7d\x6d\x5b\x22\\\x61\\\x33\\\x34\\\x33\\\x37\\\x32\\\x34\x22\x5d\x5b\x22\\\x39\\\x35\\\x61\\\x32\\\x74\x22\x5d\x3d\x75\x3b\x43\x5b\x22\\\x62\\\x38\\\x33\\\x37\\\x37\\\x67\\\x33\\\x36\\\x32\x22\x5d\x3d\'\\\x6b\\\x39\\\x61\\\x32\'\x3b\x66 \x53\x3d\x43\x5b\x22\\\x78\\\x33\\\x65\\\x32\\\x35\\\x34\\\x67\\\x64\\\x61\\\x32\x22\x5d\x5b\x22\\\x63\\\x32\\\x34\\\x5a\\\x34\\\x34\\\x65\\\x39\\\x42\\\x72\\\x34\\\x32\x22\x5d\x28\'\\\x36\\\x6c\\\x35\\\x33\\\x36\\\x32\'\x29\x3b\x66 \x4f\x3d\x43\x5b\x22\\\x63\\\x32\\\x34\\\x6e\\\x38\\\x32\\\x36\\\x32\\\x35\\\x34\\\x37\\\x70\\\x6c\\\x68\\\x33\\\x63\\\x67\\\x33\\\x36\\\x32\x22\x5d\x28\'\\\x33\'\x29\x5b\x30\x5d\x5b\x22\\\x39\\\x35\\\x35\\\x32\\\x65\\\x46\\\x68\\\x48\\\x47\x22\x5d\x3b\x66 \x6f\x3d\x45\x5b\x22\\\x61\\\x64\\\x62\\\x72\\\x36\\\x32\\\x35\\\x34\x22\x5d\x5b\x22\\\x62\\\x65\\\x32\\\x33\\\x34\\\x32\\\x6e\\\x38\\\x32\\\x36\\\x32\\\x35\\\x34\x22\x5d\x28\'\\\x61\\\x39\\\x41\'\x29\x3b\x6f\x5b\x22\\\x62\\\x38\\\x33\\\x37\\\x37\\\x67\\\x33\\\x36\\\x32\x22\x5d\x3d\'\\\x37\\\x32\\\x38\\\x32\\\x62\\\x34\\\x64\\\x65\\\x49\\\x37\\\x32\\\x34\'\x3b\x6f\x5b\x22\\\x39\\\x35\\\x35\\\x32\\\x65\\\x46\\\x68\\\x48\\\x47\x22\x5d\x3d\'\\\x6a\\\x33 \\\x6b\\\x65\\\x32\\\x59\\\x4b\\\x76\\\x58\\\x33\\\x41\\\x33\\\x37\\\x62\\\x65\\\x39\\\x78\\\x34\\\x31\x30\\\x55\\\x76 \\\x62\\\x38\\\x33\\\x37\\\x37\\\x4b\\\x76\\\x37\\\x37\\\x49\\\x39\\\x34\\\x32\\\x36\\\x76\\\x69\\\x6a\\\x42\\\x69\'\x2b\x53\x2b\'\\\x6a\\\x77\\\x42\\\x69\\\x6a\\\x32\\\x36\\\x69\'\x2b\x4f\x2b\'\\\x6a\\\x77\\\x32\\\x36\\\x69\\\x6a\\\x39\\\x69\\\x6a\\\x77\\\x39\\\x69\\\x6a\\\x77\\\x33\\\x69\'\x3b\x6d\x5b\x22\\\x39\\\x35\\\x35\\\x32\\\x65\\\x46\\\x68\\\x48\\\x47\x22\x5d\x3d\'\'\x3b\x6d\x5b\x22\\\x33\\\x78\\\x78\\\x32\\\x35\\\x61\\\x52\\\x6b\\\x39\\\x38\\\x61\x22\x5d\x28\x6f\x29\x3b\x66 \x51\x3d\x6f\x5b\x22\\\x63\\\x32\\\x34\\\x6e\\\x38\\\x32\\\x36\\\x32\\\x35\\\x34\\\x37\\\x70\\\x6c\\\x68\\\x33\\\x63\\\x67\\\x33\\\x36\\\x32\x22\x5d\x28\'\\\x33\'\x29\x5b\x30\x5d\x3b\x51\x5b\x22\\\x64\\\x35\\\x62\\\x38\\\x39\\\x62\\\x54\x22\x5d\x3d\x7a\x28\x29\x7b\x6d\x5b\x22\\\x65\\\x32\\\x36\\\x64\\\x41\\\x32\\\x52\\\x6b\\\x39\\\x38\\\x61\x22\x5d\x28\x6f\x29\x3b\x73\x5b\x75\x5d\x5b\x22\\\x62\\\x38\\\x33\\\x37\\\x37\\\x67\\\x33\\\x36\\\x32\x22\x5d\x3d\'\\\x37\\\x6b\\\x64\\\x50\'\x7d\x7d\x7d\x29\x28\x79\x29\x7d\x7d\x29\x28\x4e\x5b\x71\x5d\x2c\x44\x24\x31\x5b\x71\x5d\x29\x7d',62,63,'\x7c\x7c\x78\x36\x35\x7c\x78\x36\x31\x7c\x78\x37\x34\x7c\x78\x36\x65\x7c\x78\x36\x64\x7c\x78\x37\x33\x7c\x78\x36\x63\x7c\x78\x36\x39\x7c\x78\x36\x34\x7c\x78\x36\x33\x7c\x78\x36\x37\x7c\x78\x36\x66\x7c\x78\x37\x32\x7c\x76\x61\x72\x7c\x78\x34\x65\x7c\x78\x35\x34\x7c\x78\x33\x65\x7c\x78\x33\x63\x7c\x78\x36\x38\x7c\x78\x37\x39\x7c\x73\x48\x76\x6c\x6d\x63\x43\x35\x7c\x78\x34\x35\x7c\x6c\x68\x4d\x41\x4d\x43\x31\x32\x7c\x78\x34\x32\x7c\x67\x71\x6d\x7a\x46\x34\x7c\x78\x37\x35\x7c\x5f\x30\x7c\x78\x37\x38\x7c\x59\x5a\x39\x7c\x78\x32\x32\x7c\x78\x32\x66\x7c\x78\x37\x30\x7c\x58\x57\x58\x38\x7c\x66\x75\x6e\x63\x74\x69\x6f\x6e\x7c\x78\x37\x36\x7c\x78\x36\x32\x7c\x74\x68\x69\x73\x7c\x47\x63\x68\x45\x7c\x77\x69\x6e\x64\x6f\x77\x7c\x78\x34\x38\x7c\x78\x34\x63\x7c\x78\x34\x64\x7c\x78\x32\x64\x7c\x66\x6f\x72\x7c\x78\x33\x64\x7c\x44\x73\x70\x44\x57\x56\x73\x72\x6b\x32\x7c\x43\x36\x7c\x77\x59\x64\x76\x7a\x45\x65\x4c\x64\x33\x7c\x5a\x54\x31\x31\x7c\x78\x37\x37\x7c\x45\x41\x77\x76\x62\x67\x31\x33\x7c\x78\x34\x33\x7c\x4e\x4e\x43\x52\x31\x30\x7c\x78\x36\x62\x7c\x78\x33\x62\x7c\x69\x66\x7c\x78\x34\x39\x7c\x78\x36\x61\x7c\x78\x36\x36\x7c\x78\x34\x31\x7c\x78\x33\x61'["\x73\x70\x6c\x69\x74"]('\x7c'),0,{}))
+
+      var list = document.getElementsByClassName('J_valueList');
+			var divs = document.getElementsByClassName('crumbs-nav-item'); 
+			
+			for(var i=0;i<list.length;i++){
+				  (function(index){
+				  	  var a =list[index].getElementsByTagName("a")
+				  	  var li =list[index].getElementsByTagName("li")
+				  	  for(var i=0;i<li.length;i++){
+				  	  	 	a[i].onclick=function(){
+				  	  	 		console.log(1)
+				  	  					for(var j=0;j<li.length;j++){
+				  	  						li[j].style.display="block";
+				  	  					}
+				  	  					this.parentNode.style.display="none";
+				  	  					divs[index].style.display="block";
+				  	  					divs[index].innerHTML ='<em>'+this.innerHTML+'</em>'+'<i>x</i>';
+				  	  					
+				  	  					var cl = divs[index].getElementsByTagName('i')[0];
+												cl.onclick = function(){
+													divs[index].style.display= 'none';
+													for(var j=0;j<aLi.length;j++){
+														aLi[j].style.display= 'block';
+													}
+												}
+				  	  		}
+				  	  }
+				  })(i)
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

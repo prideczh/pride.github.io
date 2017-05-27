@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		input{
+            width: 100%;
+            height: 30px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+        li{
+            list-style: none;
+            background-color: #009999;
+            margin-top: 3px;
+            line-height: 30px;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            display: block;
+            width: 100%;
+        }
+        a:hover,.hover{
+            background-color: #00FF99;
+        }
+        #box{
+            width: 500px;
+            margin: 100px auto 0;
+        }
+        .select{
+            background-color: #60625b;
+        }
+	</style>
+</head>
+<body>
+<div id="box">
+    <input type="text" id="s"/>
+    <ul id="list">
+        <li><a href="javascript:;">《第七个读者》</a></li>
+        <li><a href="javascript:;">《 心理罪 画像》</a></li>
+        <li><a href="javascript:;">《 心理罪 教化场》</a></li>
+        <li><a href="javascript:;">《 心理罪 暗河》</a></li>
+        <li><a href="javascript:;">《 心理罪 城市之光》</a></li>
+        <li><a href="javascript:;">《地球往事》</a></li>
+        <li><a href="javascript:;">《黑暗森林》</a></li>
+        <li><a href="javascript:;">《死神永生》</a></li>
+        <li><a href="javascript:;">《乡村教师》</a></li>
+        <li><a href="javascript:;">《地球大炮》</a></li>
+    </ul>
+</div>
+
+<script>
+	/*		focus()		:   是一个方法，让元素获得鼠标光标
+	 		select()    :	是一个方法，让元素获得鼠标光标    tex.select();
+	*/
+	var txt = document.getElementById('s');
+	var list = document.getElementById('list');
+	var lis = list.getElementsByTagName('li');
+	var As = list.getElementsByTagName('a');
+	var onoff = true;
+	var arr = [];
+	
+	
+	txt.onfocus = function(){
+			list.style.display = 'block';
+	}
+	
+	txt.onblur = function(){
+		if(onoff){
+			list.style.display = 'none';
+		}
+	}
+	
+	list.onmouseenter = function(){
+		onoff = false;
+	}
+	list.onmouseleave = function(){
+		onoff = true;
+		txt.focus();
+	}
+	
+	
+	for(var i=0;i<As.length;i++){
+		As[i].index = i;
+		As[i].onclick = function(ev){
+			if(ev.ctrlKey){//多选
+				if(indexArr(arr,this.index) != -1){
+					arr.splice(indexArr(arr,this.index),1);
+				}else{
+					arr.push(this.index);
+				}
+				
+				
+			}else{//单选
+				
+				if(indexArr(arr,this.index) != -1){
+					arr.splice(indexArr(arr,this.index),1);
+				}else{
+					arr = [];
+					arr.push(this.index);
+				}		
+			}
+			addInner();
+			clearBg();
+			setBj();
+		}
+	}
+	
+	
+	function clearBg(){
+		for(var i=0;i<lis.length;i++){
+			lis[i].className = '';
+		}
+	}
+	
+	function setBj(){
+		for(var i=0;i<arr.length;i++){
+			lis[arr[i]].className = 'select';
+		}
+	}
+	
+	function addInner(){
+		var str = '';
+		for(var i=0;i<As.length;i++){
+			if(arr[i]>=0){
+				str += As[arr[i]].innerHTML;
+			}	
+		}
+		txt.value = str;
+	}
+	
+	function indexArr(a,b){
+		for(var i=0;i<a.length;i++){
+			if(a[i] == b){
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+</script>
+
+</body>
+</html>
